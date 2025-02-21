@@ -20,9 +20,9 @@ export default function MyNavBar() {
             }}
             sx={{ borderRadius: "10px" }}
             >
-            <BottomNavigationAction label="Fridge" icon={<KitchenIcon />} />
-            <BottomNavigationAction label="List" icon={<ChecklistIcon />} />
-            <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+            <BottomNavigationAction href="/" label="Fridge" icon={<KitchenIcon />} />
+            <BottomNavigationAction href='/list' label="List" icon={<ChecklistIcon />} />
+            <BottomNavigationAction href='/nearby' label="Nearby" icon={<LocationOnIcon />} />
         </BottomNavigation>
         </Box>
     </div>

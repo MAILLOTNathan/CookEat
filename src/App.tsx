@@ -1,12 +1,15 @@
-import { DarkThemeToggle } from "flowbite-react";
-import MyNavBar from "./components/MyNavBar";
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+
 import Fridge from "./pages/Fridge";
 
 function App() {
     return (
         <main className="">
-            <MyNavBar />
-            <Fridge />
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Fridge />} />
+                </Routes>
+            </Router>
         </main>
     );
 }
